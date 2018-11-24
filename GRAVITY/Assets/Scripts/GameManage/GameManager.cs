@@ -70,8 +70,14 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private GameObject VenusBadgeUI;
     [SerializeField] private GameObject MercuryBadgeUI;
 
+
+    //Sounds
+    public AudioClip MusicClip;
+    public AudioSource MusicSource;
+
     void Start () {
 
+        MusicSource.clip = MusicClip;
 
         StarsNeptuneIG = 0;
         StarsUranusIG = 0;
@@ -151,6 +157,7 @@ public class GameManager : MonoBehaviour {
     //Update Stars
     public void StarsNeptune() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsNeptuneIG = StarsNeptuneIG + 1;
     }
 
@@ -167,6 +174,7 @@ public class GameManager : MonoBehaviour {
     // uranus
     public void StarsUranus() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsUranusIG = StarsUranusIG + 1;
     }
 
@@ -183,6 +191,7 @@ public class GameManager : MonoBehaviour {
     // Saturn
     public void StarsSaturn() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsSaturnIG = StarsSaturnIG + 1;
     }
 
@@ -198,6 +207,7 @@ public class GameManager : MonoBehaviour {
     // Jupiter
     public void StarsJupiter() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsJupiterIG = StarsJupiterIG + 1;
     }
 
@@ -214,6 +224,7 @@ public class GameManager : MonoBehaviour {
     // Mars
     public void StarsMars() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsMarsIG = StarsMarsIG + 1;
     }
 
@@ -230,6 +241,7 @@ public class GameManager : MonoBehaviour {
     // Venus
     public void StarsVenus() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsVenusIG = StarsVenusIG + 1;
     }
 
@@ -246,6 +258,7 @@ public class GameManager : MonoBehaviour {
     // Mercury
     public void StarsMercury() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsMercuryIG = StarsMercuryIG + 1;
     }
 
@@ -262,6 +275,7 @@ public class GameManager : MonoBehaviour {
     // Earth
     public void StarsEarth() // when called add 1 to the int
     {
+        MusicSource.Play();
         StarsEarthIG = StarsEarthIG + 1;
     }
 

@@ -6,10 +6,13 @@ public class StarsNeptune : MonoBehaviour {
 
     GameManager gm; // Reference to the GameManager script
 
+ 
+
     // Use this for initialization
     void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>(); // "grab" the GameManager
+        
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class StarsNeptune : MonoBehaviour {
         {
             gm.StarsNeptune(); // call the function stars within the GameManager
             Destroy(gameObject); // Destroy
+            
         }
     }
 }
